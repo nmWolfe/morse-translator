@@ -69,11 +69,16 @@ body {
       padding: 10px;
       margin: 10px;
       font-size: 3vh;
-      border: 1px solid #797aa2;
-      border-radius: 5px;
+      border-bottom: 1px solid $primary-color;
       color: $primary-color;
       height: 10vh;
-      width: 90vw;
+    }
+  }
+  .footer {
+    padding: 10px;
+    &__img {
+      padding: 5px;
+      height: 10vh;
     }
   }
 }
