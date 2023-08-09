@@ -1,0 +1,24 @@
+{
+  "name": "morse-translator",
+  "homepage": "https://nmWolfe.github.io/",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "test:jest": "vitest"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.3",
+    "gh-pages": "^5.0.0",
+    "jest": "^29.6.2",
+    "sass": "^1.64.1",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9",
+    "vitest": "^0.34.1"
+  }
+}
