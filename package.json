@@ -1,11 +1,12 @@
 {
   "name": "morse-translator",
-  "homepage": "https://nmWolfe.github.io/",
+  "homepage": "https://nmWolfe.github.io/morse-translator",
   "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "tsc": "tsc",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
