@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&family=Molengo&family=Rye&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #315680;
+  font-family: Molengo, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 800px;
+  padding: 10px;
+  border: 1px solid Molengo, sans-serif;
+}
+.wrapper .header {
+  margin: 10px;
+}
+.wrapper .header .header-header {
+  font-family: "Metal Mania", sans-serif;
+  padding: 20px 60px;
+  color: #ded1c6;
+  border: 2px solid #ded1c6;
+  border-radius: 10px;
+  background-image: url("../assets/lightening.jpg");
+}
+.wrapper .display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+}
+.wrapper .display .sub-header {
+  color: #ded1c6;
+}
+.wrapper .display .input {
+  margin: 10px;
+  height: 4vh;
+  border-radius: 5px;
+  padding: 2px;
+  width: 50vw;
+}
+.wrapper .display .input:active {
+  border: none;
+}
+.wrapper .display .submit {
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #ded1c6;
+  background-image: url("../assets/lightening.jpg");
+  color: #ded1c6;
+  width: 100px;
+}
+.wrapper .display .code {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  font-size: 3vh;
+  border: 1px solid #797aa2;
+  border-radius: 5px;
+  color: #ded1c6;
+  height: 10vh;
+  width: 90vw;
+}/*# sourceMappingURL=styles.css.map */

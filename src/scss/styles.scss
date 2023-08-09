@@ -25,6 +25,7 @@ body {
   margin: auto;
   max-width: 800px;
   padding: 10px;
+  border: 1px solid $primary-font;
   .header {
     margin: 10px;
     .header-header {
@@ -33,30 +34,46 @@ body {
       color: $primary-color;
       border: 2px solid $primary-color;
       border-radius: 10px;
+      background-image: url("../assets/lightening.jpg");
     }
   }
-  .eng-morse {
-    .eng-input {
+  .display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    .sub-header {
+      color: $primary-color;
+    }
+    .input {
       margin: 10px;
       height: 4vh;
       border-radius: 5px;
-
+      padding: 2px;
+      width: 50vw;
       &:active {
         border: none;
       }
     }
-    .eng-submit {
+    .submit {
       padding: 5px;
       font-weight: bold;
+      border-radius: 5px;
+      border: 1px solid $primary-color;
+      background-image: url("../assets/lightening.jpg");
+      color: $primary-color;
+      width: 100px;
     }
-    .eng-code {
+    .code {
+      text-align: center;
       padding: 10px;
       margin: 10px;
       font-size: 3vh;
       border: 1px solid #797aa2;
-      height: 30vh;
-      width: 95vw;
-      text-decoration: underline;
+      border-radius: 5px;
+      color: $primary-color;
+      height: 10vh;
+      width: 90vw;
     }
   }
 }

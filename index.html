@@ -10,10 +10,17 @@
       <header class="header">
         <h1 class="header-header">Morse Translator</h1>
       </header>
-      <div class="eng-morse">
-        <input type="text" class="eng-input" />
-        <button class="eng-submit">Translate!</button>
-        <div class="eng-code"></div>
+      <div class="display">
+        <h2 class="sub-header">English to Morse</h2>
+        <input type="text" class="input" id="eng-input" />
+        <button class="submit" id="eng-submit">Encode!</button>
+        <div class="code" id="eng-code"></div>
+      </div>
+      <div class="display">
+        <h2 class="sub-header">Morse to English</h2>
+        <input type="text" class="input" />
+        <button class="submit">Encode!</button>
+        <div class="code"></div>
       </div>
     </div>
     <script type="module" src="/src/ts/main.ts"></script>

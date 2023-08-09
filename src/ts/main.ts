@@ -1,9 +1,9 @@
 import "../scss/styles.scss";
 import { Morse } from "./types";
 
-const engInput = document.querySelector(".eng-input") as HTMLInputElement;
-const engSubmit = document.querySelector(".eng-submit") as HTMLButtonElement;
-const engCode = document.querySelector(".eng-code") as HTMLDivElement;
+const engInput = document.querySelector("#eng-input") as HTMLInputElement;
+const engSubmit = document.querySelector("#eng-submit") as HTMLButtonElement;
+const engCode = document.querySelector("#eng-code") as HTMLDivElement;
 
 if (!engInput || !engSubmit || !engCode) {
   throw new Error("Eng var error");
