@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&family=Molengo&family=Rye&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&family=Molengo&family=Orbitron&family=Source+Code+Pro:ital,wght@1,500&display=swap");
 
 $header-font: "Metal Mania", sans-serif;
 $primary-font: Molengo, sans-serif;
-$secondary-font: Rye, sans-serif;
+$secondary-font: "Source Code Pro", sans-serif;
+$future-font: Orbitron, sans-serif;
 
 $background-color: #315680;
 $primary-color: #ded1c6;
@@ -21,13 +22,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin: auto;
-  max-width: 800px;
+  max-width: 1000px;
+  height: 100vh;
   padding: 10px;
   border: 1px solid $primary-font;
+  border-radius: 10px;
+  background: $background-color;
   .header {
     margin: 10px;
+    height: 20vh;
     .header-header {
       font-family: $header-font;
       padding: 20px 60px;
@@ -38,19 +42,36 @@ body {
     }
   }
   .display {
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80vw;
+    &__paragraph {
+      text-align: center;
+      color: $primary-color;
+      margin: 30px;
+      width: 80%;
+      max-width: 800px;
+      font-size: 3vh;
+      border: 1px solid $primary-color;
+      border-radius: 5px;
+      background-color: $background-color;
+      .future {
+        font-family: $future-font;
+      }
+    }
     .sub-header {
       color: $primary-color;
     }
     .input {
       margin: 10px;
-      height: 4vh;
+      height: 5vh;
       border-radius: 5px;
       padding: 2px;
       width: 50vw;
+      font-size: 3vh;
+      font-family: $secondary-font;
       &:active {
         border: none;
       }
@@ -63,6 +84,9 @@ body {
       background-image: url("../assets/lightening.jpg");
       color: $primary-color;
       width: 100px;
+      &:active {
+        transform: scale(0.9);
+      }
     }
     .code {
       text-align: center;
@@ -72,13 +96,24 @@ body {
       border-bottom: 1px solid $primary-color;
       color: $primary-color;
       height: 10vh;
+      max-width: 800px;
+    }
+    #morse-code {
+      font-family: $secondary-font;
     }
   }
   .footer {
+    height: 20vh;
     padding: 10px;
     &__img {
       padding: 5px;
       height: 10vh;
     }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-image: url("../assets/lightening.jpg");
   }
 }
