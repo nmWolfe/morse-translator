@@ -1,4 +1,9 @@
-import { handleStrSplit, handleMorseConvert } from "./functions";
+import {
+  handleStrSplit,
+  handleMorseConvert,
+  handleMorseSplit,
+  handleEngConvert,
+} from "./functions";
 
 describe("handleStrSplit", () => {
   it("should split a string into an array", () => {
@@ -27,7 +32,7 @@ describe("handleStrSplit", () => {
   });
 });
 
-describe("handleMorseConvvert", () => {
+describe("handleMorseConvert", () => {
   it("should convert a passed array into morse code", () => {
     const arr = ["i", " ", "a", "m", " ", "h", "e", "r", "e"];
     const result = handleMorseConvert(arr);
@@ -40,5 +45,22 @@ describe("handleMorseConvvert", () => {
     const result = handleMorseConvert(arr);
 
     expect(result).toEqual("--..-- .-.-.- ..--.. -.--. .-.-.");
+  });
+});
+
+describe("handleMorseSplit", () => {
+  it("should split the input string on a space", () => {
+    const result = handleMorseSplit(".... . -.--");
+
+    expect(result).toEqual(["....", ".", "-.--"]);
+  });
+});
+
+describe("handleEngConvert", () => {
+  it("should convert an eng array into morse", () => {
+    const arr = ["....", ".", "-.--"];
+    const result = handleEngConvert(arr);
+
+    expect(result).toEqual("hey");
   });
 });

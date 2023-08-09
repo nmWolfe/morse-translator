@@ -1,7 +1,7 @@
 // Take string input, split letters, search morse object for corresponding key
 import { Morse } from "./types";
 
-const morseCode: Morse = {
+export const morseCode: Morse = {
   a: ".-",
   b: "-...",
   c: "-.-.",
@@ -54,6 +54,7 @@ const morseCode: Morse = {
   ")": "-.--.-",
 };
 
+// Eng to Morse
 export const handleStrSplit = (string: string) => {
   const lowerStr = string.toLowerCase();
   return lowerStr.split("");
@@ -64,4 +65,20 @@ export const handleMorseConvert = (string: string[]) => {
     morseStr.push(morseCode[string[i]]);
   }
   return morseStr.join(" ");
+};
+
+// Morse To Eng
+export const handleMorseSplit = (string: string) => {
+  return string.split(" ");
+};
+export const handleEngConvert = (string: string[]) => {
+  const engConvert = [];
+  for (let i = 0; i < string.length; i++) {
+    engConvert.push(
+      Object.keys(morseCode).filter((key) => {
+        return morseCode[key] === string[i];
+      })
+    );
+  }
+  return engConvert.join("");
 };
