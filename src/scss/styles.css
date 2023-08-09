@@ -28,6 +28,7 @@ body {
 }
 .wrapper .header .header-header {
   font-family: "Metal Mania", sans-serif;
+  font-size: 3.5vh;
   padding: 20px 60px;
   color: #ded1c6;
   border: 2px solid #ded1c6;

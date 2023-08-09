@@ -32,7 +32,6 @@ engSubmit.addEventListener("click", () => {
 });
 
 // Handle Morse - Eng
-
 const handleMorseToEng = (string: string) => {
   const splitStr = handleMorseSplit(string);
   const engArr = handleEngConvert(splitStr);
